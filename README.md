@@ -14,13 +14,29 @@ For a quick test you can pass your token directly to a new client:
 semaphore = Semaphore::Client.new(api_key: '[API KEY]', sender_name: '[SENDER NAME]')
 
 # Sending a message
-semaphore.messages(parameters: {message: '[YOUR MESSAGE]', number: '[NUMBER]'})
+semaphore.messages(
+  parameters: {
+    message: '[YOUR MESSAGE]',
+    number: '[NUMBER]'
+  }
+)
 
 # Sending a Bulk Message
-semaphore.messages(parameters: {message: '[YOUR MESSAGE]', number: '[NUMBER], [NUMBER], [NUMBER], [NUMBER]'})
+semaphore.messages(
+  parameters: {
+    message: '[YOUR MESSAGE]',
+    number: '[NUMBER], [NUMBER], [NUMBER], [NUMBER]' # Comma separated
+  }
+)
 
 # Sending an OTP
-semaphore.otp(parameters: {message: 'Thanks for registering. Your OTP Code is {otp}.', number: '[NUMBER]', code: 1234})
+semaphore.otp(
+  parameters: {
+    message: 'Thanks for registering. Your OTP Code is {otp}.',
+    number: '[NUMBER]',
+    code: 1234
+  }
+)
 ```
 
 ### Using Config
@@ -34,6 +50,17 @@ Semaphore.configure do |config|
   config.api_key = ENV.fetch("SEMAPHORE_API_KEY")
   config.sender_name = ENV.fetch("SEMAPHORE_SENDERNAME")
 end
+```
+
+After configuring the API key, you can simply create a new client:
+
+```rb
+Semaphore::Client.new.messages(
+  parameters: {
+    message: '[YOUR MESSAGE]',
+    number: '[NUMBER]'
+  }
+)
 ```
 
 ## Installation
