@@ -1,4 +1,4 @@
-# Ruby::Semaphore
+# Semaphore
 Short description and motivation.
 
 ## Usage
