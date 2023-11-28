@@ -2,6 +2,7 @@ require 'faraday'
 
 require_relative 'semaphore/http'
 require_relative 'semaphore/client'
+require_relative "semaphore/version"
 
 module Semaphore
   class Error < StandardError; end
