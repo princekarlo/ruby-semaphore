@@ -82,7 +82,7 @@ $ gem install ruby-semaphore
 
 ## Contributing
 
-Contributions are welcome! Please follow the guidelines outlined in the CONTRIBUTING.md file.
+Contributions are welcome! Please follow the guidelines outlined in the [CONTRIBUTING.md](https://github.com/princekarlo-bootyard/ruby-semaphore/blob/main/CONTRIBUTING.md) file.
 
 ## License
 
