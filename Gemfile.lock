@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ruby-semaphore (0.1.0)
+    ruby-semaphore (0.1.1)
       faraday (>= 2.7.12)
 
 GEM
