@@ -34,19 +34,19 @@ module Semaphore
       get_request(path: "/messages/#{id}", parameters:)
     end
 
-    def get_account(parameters: {})
+    def account(parameters: {})
       get_request(path: '/account', parameters:)
     end
 
-    def get_account_transactions(parameters: {})
+    def account_transactions(parameters: {})
       get_request(path: '/account/transactions', parameters:)
     end
 
-    def get_account_sendernames(parameters: {})
+    def account_sendernames(parameters: {})
       get_request(path: '/account/sendernames', parameters:)
     end
 
-    def get_account_users(parameters: {})
+    def account_users(parameters: {})
       get_request(path: '/account/users', parameters:)
     end
   end
