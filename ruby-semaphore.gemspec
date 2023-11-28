@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
     Dir['{config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
   end
 
-  spec.add_dependency 'faraday', '>= 2.7.12'
+  spec.add_dependency 'faraday', '~> 2.7.12'
 end
